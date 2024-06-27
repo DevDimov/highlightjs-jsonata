@@ -7,6 +7,12 @@ JSONata is a lightweight query and transformation language for JSON data. To lea
 ## Usage
 Include the highlight.js library in your webpage or Node app, then load this module.
 
+If using with Node, install the package by running
+
+```bash
+npm i highlightjs-jsonata
+```
+
 ### Static website
 
 1. Load the module after loading Highlight.js
@@ -21,6 +27,12 @@ Include the highlight.js library in your webpage or Node app, then load this mod
 </script>
 ```
 
+3. Once loaded, mark the code you want to highlight with the class.
+
+```html
+<pre><code class="language-jsonata">...</code></pre>
+```
+
 ### Node.js
 
 ```javascript
@@ -31,23 +43,7 @@ hljs.registerLanguage("jsonata", hljsJsonata);
 hljs.highlightAll();
 ```
 
-Once loaded, mark the code you want to highlight with the class.
-
-#### HTML
-
-```html
-<pre><code class="language-jsonata">...</code></pre>
-```
-
-#### Markdown
-
-```jsonata
-```jsonata
-$a := 1 + 2
-... 
-```
-
-### Next.js
+### React/Next.js
 
 ```typescript
 import fs from "fs";
@@ -60,7 +56,7 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import { common } from "lowlight";
-import jsonata from "highlight.js/lib/languages/jsonata"
+import hljsJsonata from "highlightjs-jsonata";
 
 const file = fs.readFileSync("./full/path/to/file.md", "utf8");
 
@@ -69,9 +65,17 @@ const mdToHtml = await unified()
   .use(remarkGfm)
   .use(remarkRehype)
   .use(rehypeSanitize)
-  .use(rehypeHighlight, { languages: {...common, jsonata} })
+  .use(rehypeHighlight, { languages: {...common, hljsJsonata} })
   .use(rehypeStringify)
   .process(matter(file).content);
+```
+
+#### Markdown
+
+```jsonata
+```jsonata
+$a := 1 + 2
+... 
 ```
 
 ## License
