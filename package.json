@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-jsonata",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Vlad Dimov",
   "description": "JSONata grammar for Highlight.js",
   "main": "src/languages/jsonata.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DevDimov/highlightjs-jsonata.git"
+    "url": "git+https://github.com/DevDimov/highlightjs-jsonata.git"
   },
   "keywords": [
     "jsonata",
