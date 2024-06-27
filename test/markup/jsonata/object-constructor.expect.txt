@@ -1,0 +1,15 @@
+(
+  <span class="hljs-variable">$jsonInput</span> := {
+    <span class="hljs-attr">&quot;firstName&quot;</span>: <span class="hljs-string">&quot;JSONata&quot;</span>,
+    <span class="hljs-attr">&quot;lastName&quot;</span>: <span class="hljs-string">&quot;User&quot;</span>,
+    <span class="hljs-attr">&quot;skills&quot;</span>: [
+      { <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;javascript&quot;</span>, <span class="hljs-attr">&quot;years&quot;</span>: <span class="hljs-number">3</span> },
+      { <span class="hljs-attr">&quot;language&quot;</span>: <span class="hljs-string">&quot;JSONata&quot;</span>, <span class="hljs-attr">&quot;years&quot;</span>: <span class="hljs-number">1</span> }
+    ]
+  };
+
+  <span class="hljs-variable">$jsonInput</span>.{
+    <span class="hljs-attr">&quot;fullName&quot;</span>: <span class="hljs-variable">$join</span>([firstName, lastName], <span class="hljs-string">&quot; &quot;</span>),
+    <span class="hljs-attr">&quot;knowsJSONata&quot;</span>: skills[language = <span class="hljs-string">&quot;JSONata&quot;</span> <span class="hljs-keyword">and</span> years &gt;= <span class="hljs-number">1</span>] ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>
+  }
+)

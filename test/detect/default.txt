@@ -1,0 +1,28 @@
+(
+  $.a.b.c;
+
+  /* Example json input */
+  $jsonInput := {
+    "firstName": "JSONata",
+    "lastName": "User",
+    "age": 25,
+    "skills": ["programming", "cooking"],
+    "over 18": true,
+    "coordinates": { "latitude": 51.509865, "longitude": -0.118092 }
+  };
+  
+  /* Example function definition */
+  $getGreeting := function($firstName, $lastName) {
+    "Hello, " & $firstName & " " & $lastName
+  };
+
+  $isAdult := $jsonInput.`over 18`;
+  
+  /* Example json transformation */
+  $jsonInput.{
+    "fullName": $join([firstName, lastName], " "),
+    "greeting": $getGreeting(firstName, lastName),
+    "skills": $append(skills, "jsonata"),
+    "isAdult": $isAdult
+  }
+)

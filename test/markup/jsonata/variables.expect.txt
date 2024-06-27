@@ -1,0 +1,15 @@
+(
+  <span class="hljs-variable">$</span>;
+  <span class="hljs-variable">$</span>.a.b.c;
+  <span class="hljs-variable">$a</span> := <span class="hljs-number">1</span>;
+  <span class="hljs-variable">$aA</span> := <span class="hljs-variable">$a</span> + <span class="hljs-number">1</span>;
+  <span class="hljs-variable">$aA1</span> := <span class="hljs-number">1.5</span>;
+  <span class="hljs-variable">$AAaa12</span> := <span class="hljs-variable">$a</span> * <span class="hljs-number">10.50</span>;
+  <span class="hljs-variable">$123abcABC</span> := <span class="hljs-number">0.10</span> / <span class="hljs-number">0.005</span>;
+  <span class="hljs-variable">$quoteStringVar</span> := <span class="hljs-string">&quot;JSONata&quot;</span>;
+  <span class="hljs-variable">$aposStringVar</span> := <span class="hljs-string">&#x27;User&#x27;</span>;
+  <span class="hljs-variable">$backticksStringVar</span> := <span class="hljs-string">`JSONata User`</span>;
+  <span class="hljs-variable">$sourceKeys</span> := <span class="hljs-variable">$keys</span>(<span class="hljs-variable">$</span>);
+  <span class="hljs-variable">$arrayVar</span> := [<span class="hljs-string">&quot;a b c&quot;</span>, <span class="hljs-number">123</span>, <span class="hljs-number">456.789</span>, <span class="hljs-variable">$a</span>, { <span class="hljs-attr">&quot;key1&quot;</span>: <span class="hljs-string">&quot;value1&quot;</span>}];
+  <span class="hljs-variable">$objVar</span> := { <span class="hljs-attr">&quot;key1&quot;</span>: <span class="hljs-string">&quot;stringValue&quot;</span>, <span class="hljs-attr">&quot;key2&quot;</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">&quot;key3&quot;</span>: <span class="hljs-variable">$stringVar</span> };
+)

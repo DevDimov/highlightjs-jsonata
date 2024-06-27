@@ -1,0 +1,15 @@
+(
+  $jsonInput := {
+    "firstName": "JSONata",
+    "lastName": "User",
+    "skills": [
+      { "language": "javascript", "years": 3 },
+      { "language": "JSONata", "years": 1 }
+    ]
+  };
+
+  $jsonInput.{
+    "fullName": $join([firstName, lastName], " "),
+    "knowsJSONata": skills[language = "JSONata" and years >= 1] ? true : false
+  }
+)

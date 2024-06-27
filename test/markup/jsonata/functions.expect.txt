@@ -1,0 +1,6 @@
+(
+  <span class="hljs-variable">$getGreeting</span> := <span class="hljs-keyword">function</span>(<span class="hljs-variable">$firstName</span>, <span class="hljs-variable">$lastName</span>) {
+    <span class="hljs-string">&quot;Hello, &quot;</span> &amp; <span class="hljs-variable">$firstName</span> &amp; <span class="hljs-string">&quot; &quot;</span> &amp; <span class="hljs-variable">$lastName</span> &amp; <span class="hljs-string">&quot;!&quot;</span>
+  };
+  <span class="hljs-variable">$getGreeting</span>(<span class="hljs-string">&quot;JSONata&quot;</span>, <span class="hljs-string">&quot;User&quot;</span>);
+)

@@ -1,0 +1,15 @@
+(
+  <span class="hljs-variable">$function</span> := <span class="hljs-keyword">function</span>(<span class="hljs-variable">$number</span>) {
+    (<span class="hljs-variable">$number</span> * <span class="hljs-number">2.50</span>) / <span class="hljs-number">4</span>
+  };
+  <span class="hljs-variable">$and</span> := <span class="hljs-number">1</span> &lt; <span class="hljs-number">10</span> <span class="hljs-keyword">and</span> <span class="hljs-number">10</span> &gt; <span class="hljs-number">1</span> ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+  <span class="hljs-variable">$or</span> := <span class="hljs-number">1</span> &lt; <span class="hljs-number">10</span> <span class="hljs-keyword">or</span> <span class="hljs-number">10</span> &gt; <span class="hljs-number">1</span> ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+  <span class="hljs-variable">$in</span> := <span class="hljs-number">1</span> <span class="hljs-keyword">in</span> [<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>] ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+
+  {
+    <span class="hljs-attr">&quot;func&quot;</span>: <span class="hljs-variable">$function</span>(<span class="hljs-number">10</span>),
+    <span class="hljs-attr">&quot;and&quot;</span>: <span class="hljs-variable">$and</span>,
+    <span class="hljs-attr">&quot;or&quot;</span>: <span class="hljs-variable">$or</span>,
+    <span class="hljs-attr">&quot;in&quot;</span>: <span class="hljs-variable">$in</span>
+  };
+)

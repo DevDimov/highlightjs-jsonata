@@ -1,0 +1,15 @@
+(
+  $;
+  $.a.b.c;
+  $a := 1;
+  $aA := $a + 1;
+  $aA1 := 1.5;
+  $AAaa12 := $a * 10.50;
+  $123abcABC := 0.10 / 0.005;
+  $quoteStringVar := "JSONata";
+  $aposStringVar := 'User';
+  $backticksStringVar := `JSONata User`;
+  $sourceKeys := $keys($);
+  $arrayVar := ["a b c", 123, 456.789, $a, { "key1": "value1"}];
+  $objVar := { "key1": "stringValue", "key2": 10, "key3": $stringVar };
+)

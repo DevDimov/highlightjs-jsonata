@@ -1,0 +1,9 @@
+(
+  <span class="hljs-comment">/* Single-line comment */</span>
+  <span class="hljs-variable">$x</span> := <span class="hljs-number">1</span>; <span class="hljs-comment">/* Inline comment */</span>
+  <span class="hljs-comment">/*
+    Multi-line
+    comment
+  */</span>
+  <span class="hljs-variable">$y</span> := <span class="hljs-number">2</span>;
+)

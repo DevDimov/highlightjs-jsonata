@@ -1,0 +1,15 @@
+(
+  $function := function($number) {
+    ($number * 2.50) / 4
+  };
+  $and := 1 < 10 and 10 > 1 ? true : false;
+  $or := 1 < 10 or 10 > 1 ? true : false;
+  $in := 1 in [5,4,3,2] ? true : false;
+
+  {
+    "func": $function(10),
+    "and": $and,
+    "or": $or,
+    "in": $in
+  };
+)

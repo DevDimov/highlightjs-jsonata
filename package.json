@@ -1,0 +1,33 @@
+{
+  "name": "highlightjs-jsonata",
+  "version": "0.1.0",
+  "author": "Vlad Dimov",
+  "description": "JSONata grammar for Highlight.js",
+  "main": "src/languages/jsonata.js",
+  "scripts": {},
+  "files": [
+    "src/languages/jsonata.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevDimov/highlightjs-jsonata.git"
+  },
+  "keywords": [
+    "jsonata",
+    "JSONata",
+    "JSON",
+    "json",
+    "javascript",
+    "highlight",
+    "highlight.js",
+    "highlightjs"
+  ],
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/DevDimov/highlightjs-jsonata/issues"
+  },
+  "homepage": "https://github.com/DevDimov/highlightjs-jsonata",
+  "devDependencies": {
+    "highlight.js": "^10.7.1"
+  }
+}

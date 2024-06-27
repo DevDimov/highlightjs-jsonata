@@ -1,0 +1,6 @@
+(
+  $getGreeting := function($firstName, $lastName) {
+    "Hello, " & $firstName & " " & $lastName & "!"
+  };
+  $getGreeting("JSONata", "User");
+)
