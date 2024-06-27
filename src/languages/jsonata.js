@@ -5,7 +5,7 @@ Author: Vlad Dimov <devdimov@proton.me>
 Website: http://www.jsonata.org
 */
 
-module.exports = function (hljs) {
+export default function(hljs) {
   const keywords = "function and or in";
 
   const literals = [
@@ -15,7 +15,7 @@ module.exports = function (hljs) {
 
   const jsonataVariable = {
     scope: 'variable',
-    begin: /\$[a-zA-Z0-9_]*/,
+    begin: /\$[a-zA-Z0-9_]*(?![\w\(])/,
     relevance: 5
   };
 
@@ -39,7 +39,7 @@ module.exports = function (hljs) {
 
   return {
     name: 'JSONata',
-    aliases: ['jsonata'],
+    aliases: [ 'jsonata' ],
     keywords: {
       keyword: keywords,
       literal: literals
